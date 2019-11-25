@@ -1,0 +1,231 @@
+/* CSS Document */
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl; }
+
+/*navbsr */
+.navbar-brand img {
+  margin-top: -75px; }
+
+div#navbarNav {
+  height: 100px; }
+
+.nav-item {
+  box-sizing: border-box;
+  font-weight: bold;
+  transition: 0.1s all; }
+  .nav-item:hover {
+    border-bottom: 3px solid #303174; }
+
+a.navbar-brand {
+  display: block;
+  text-align: center;
+  z-index: 5; }
+
+a.nav-link {
+  color: #fff; }
+
+ul.navbar-nav.ml-auto {
+  padding-left: 0; }
+
+header {
+  height: 650px;
+  overflow: hidden; }
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #cb694ec2;
+    z-index: 2;
+    width: 100%;
+    height: 650px; }
+    header .overlay .caption {
+      padding-top: 170px; }
+  header video {
+    position: relative; }
+
+a.btn.btn-start {
+  background: #303174;
+  padding: 10px 60px;
+  border-radius: 36px;
+  margin-top: 35px; }
+
+/* presents */
+.dash {
+  position: relative; }
+  .dash:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 130px;
+    left: 45%;
+    top: 70px;
+    background: #F17432;
+    z-index: 7; }
+
+.presents {
+  margin-top: 100px; }
+  .presents .card {
+    border: none !important;
+    margin: 50px auto; }
+    .presents .card .card-img-top {
+      width: 30% !important;
+      margin: 50px auto;
+      margin-bottom: 20px; }
+    .presents .card p {
+      color: #A6ADB7; }
+
+/* places */
+.places {
+  margin-top: 70px; }
+  .places .places-img {
+    margin-top: 100px; }
+    .places .places-img img {
+      transform: rotate(30deg);
+      transition: 0.5s all;
+      box-shadow: 3px 3px 6px 8px #eee;
+      border-radius: 20px; }
+      .places .places-img img:hover {
+        transform: rotate(0deg); }
+
+/* sell */
+.sell {
+  background: url("../img/imgs/bg.png");
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 80px; }
+  .sell .row {
+    margin-top: 100px;
+    margin-bottom: 30px; }
+  .sell h1 {
+    color: #223182; }
+  .sell .front {
+    transform: perspective(600px) rotateY(0deg); }
+    .sell .front .card {
+      cursor: pointer;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 3px 3px 4px 3px #ccc; }
+      .sell .front .card img.card-img-top {
+        width: 70%;
+        margin: 20px auto; }
+      .sell .front .card .svg-inline--fa {
+        color: #FC7531;
+        margin-left: 10px; }
+      .sell .front .card span {
+        color: #adaaaa; }
+  .sell .back {
+    transform: perspective(600px) rotateY(180deg); }
+    .sell .back .card {
+      background: #ff8acc;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 3px 3px 4px 3px #ccc; }
+      .sell .back .card img.card-img-top {
+        width: 40%;
+        margin: 20px auto;
+        margin-bottom: 50px; }
+      .sell .back .card a {
+        color: #fff; }
+    .sell .back .rent {
+      background: #ff604b; }
+
+.flip-card {
+  height: 360px; }
+
+.front, .back {
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: 1s all;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px #eee; }
+
+.flip-card:hover .back {
+  transform: perspective(600px) rotateY(0deg); }
+
+.flip-card:hover .front {
+  transform: perspective(600px) rotateY(-180deg); }
+
+/* contact */
+.contact {
+  background: url("../img/imgs/hero.gif") no-repeat fixed;
+  padding: 50px 0 50px 0; }
+  .contact h2 {
+    color: #fff;
+    margin: 10px 0 20px; }
+  .contact form {
+    width: 64%;
+    margin: 10px auto; }
+
+/* offers */
+.offers {
+  background: #FF604B;
+  padding: 50px; }
+  .offers h2 {
+    margin: 20px 0 30px; }
+  .offers form {
+    width: 65%;
+    margin: 10px auto; }
+
+/* footer */
+footer {
+  background: linear-gradient(#FC726F, #61367E);
+  padding-bottom: 50px; }
+  footer .logo-info {
+    padding: 15px;
+    padding-top: 50px; }
+    footer .logo-info ul li {
+      padding: 10px;
+      transition: 0.3s all;
+      cursor: pointer; }
+      footer .logo-info ul li:hover {
+        color: #FF604B; }
+    footer .logo-info img {
+      width: 100%; }
+    footer .logo-info .svg-inline--fa {
+      margin: 10px;
+      transition: 0.3s all; }
+      footer .logo-info .svg-inline--fa:hover {
+        transform: scale(1.2, 1.2); }
+  footer svg.svg-inline--fa.fa-instagram.fa-w-14.fa-2x:hover {
+    color: #bc1888; }
+  footer svg.svg-inline--fa.fa-facebook-f.fa-w-10.fa-2x:hover {
+    color: #4064AD; }
+  footer svg.svg-inline--fa.fa-twitter.fa-w-16.fa-2x:hover {
+    color: #54D1F7; }
+
+/*
+=================
+**************************
+
+START FAQS PAGE 
+**************************
+=================
+*/
+.default-nav {
+  background: #EB7636; }
+  .default-nav .de-brand {
+    margin-top: 0 !important; }
+
+main .accordion {
+  margin-bottom: 50px; }
+  main .accordion .card {
+    border-radius: 15px; }
+main h1 {
+  margin-top: 70px;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  position: relative; }
+  main h1:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 20px);
+    height: 3px;
+    width: 160px;
+    background: #EB7636;
+    transform: translate(-50%, -50%); }
+main button.btn.btn-link {
+  color: #eb7636; }
